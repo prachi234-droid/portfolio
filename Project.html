@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prachi Kunjir - Portfolio</title>
+    <style>
+        /* Reset styles and basic layout */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f0f0f0;
+            margin: 0;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+        }
+
+        header h1 {
+            font-size: 2em;
+            text-align: center;
+        }
+
+        header nav ul {
+            list-style-type: none;
+            text-align: center;
+        }
+
+        header nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        header nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+
+        header nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            padding: 20px 0;
+            padding-bottom: 80px; /* Adjust this value based on footer height */
+        }
+
+        section {
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-size: 1.8em;
+            margin-bottom: 10px;
+        }
+
+        .project {
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            padding: 10px;
+            background-color: #fff;
+            border-radius: 5px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            width: 100%;
+            position: relative; /* Change from absolute to relative */
+            clear: both; /* Ensure footer does not overlap content */
+        }
+
+        footer a {
+            color: inherit; /* Ensure links inherit text color from parent (overrides global link styles) */
+            text-decoration: none; /* Remove underline if not needed */
+        }
+
+        footer a:hover {
+            text-decoration: underline; /* Add underline on hover */
+        }
+
+        .contact-email a {
+            color: #ff5733; /* Email link color */
+        }
+
+        .contact-linkedin a {
+            color: #0e76a8; /* LinkedIn link color */
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            header {
+                padding: 15px 0;
+            }
+
+            header h1 {
+                font-size: 1.5em;
+            }
+
+            header nav ul li {
+                display: block;
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Prachi Kunjir</h1>
+            <nav>
+                <ul>
+                    <li><a href="home.html">About</a></li>
+                    <li><a href="Project.html">Projects</a></li>
+                    <li><a href="home.html">Skills</a></li>
+                    <li><a href="certificates.html">Certificates</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <main>
+        <section id="projects">
+            <div class="container">
+                <h2>Projects</h2>
+                <div class="project">
+                    <h3>Chatbot based Song Recommendation System (mini project)</h3>
+                    <p>The proliferation of music streaming platforms has revolutionized the way we access and consume music. However, the vast catalog of songs available can overwhelm users when it comes to making music choices. To address this challenge, we introduce a Song Recommendation Chatbot, a conversational AI system designed to facilitate and enhance music discovery.</p>
+                    <p>The chatbot engages users in interactive conversations, understands their music preferences, and provides tailored song recommendations. Users can interact via text, making it accessible and user-friendly for a wide range of users.</p>
+                    <p>Key features include personalized music profiling, real-time song suggestions, mood-based playlists, and a comprehensive knowledge of music genres and artists. The chatbot utilizes collaborative filtering and content-based recommendation to ensure relevant and emotionally resonant song recommendations.</p>
+                    <p>This abstract presents an overview of the Song Recommendation Chatbot, outlining its potential to transform the way people discover and enjoy music through an intelligent conversational interface.</p>
+                </div>
+                <div class="project">
+                    <h3>Proactive Student Attendance Management System using Dynamic QR Code(mini project)</h3>
+                    <p>This project introduces a proactive student attendance management system developed using the Java programming language and incorporating dynamic QR codes. The system aims to streamline attendance tracking processes in educational settings by leveraging Java for efficient code implementation and dynamic QR codes for real-time data capture.</p>
+                    <p>The system represents a modernized approach to attendance tracking methods, offering improved accuracy, security, and ease of use for both students and educators. Traditional methods often suffer from inefficiencies and inaccuracies, which the dynamic QR code integration seeks to mitigate.</p>
+                </div>
+                <!-- Add more projects as needed -->
+            </div>
+        </section>
+    </main>
+    
+    <footer id="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <ul>
+                <li class="contact-email"><a href="mailto:kunjirprachi234@gmail.com">kunjirprachi234@gmail.com</a></li>
+                <li class="contact-linkedin"><a href="https://www.linkedin.com/in/prachi-kunjir-711932253/">LinkedIn Profile</a></li>
+                <li class="contact-github"><a href="https://github.com/">Github Profile</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling functionality
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+
+                const target = document.querySelector(this.getAttribute('href'));
+                target.scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
+
